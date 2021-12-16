@@ -6,6 +6,15 @@ count = 0
 # mean = 2.1
 
 
+# Determine which calculation to perform. 
+print('')
+print("1. P(X = x) ")
+print("2. P(X < x) ")
+print("3. P(X > x) ")
+print('')
+option = input("Enter calcutation option ")
+
+
 # Values to place in equation
 x = int(input("Enter x value: "))
 mean = float(input("Enter lambda value: "))
@@ -46,3 +55,16 @@ def greater_than():
     print('')
     print("P( X <", x, ") = ",  total)
     print('')
+
+
+# Selecting which calculation to perform. 
+if option == '1': 
+    equals() 
+elif option == '2': 
+    less_than() 
+elif option == '3': 
+    greater_than() 
+else: 
+    print("Invalid Input for option")
+        
+        
